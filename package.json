@@ -1,0 +1,13 @@
+{
+  "name": "sitepoe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "countdown": "^2.6.0",
+    "moment": "^2.27.0",
+    "moment-countdown": "^0.0.3"
+  }
+}
