@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <header>
+            <title>When does the league end ?</title>
+        </header>
+        <body>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+            <script src="http://vincentloy.github.io/simplyCountdown.js/dist/simplyCountdown.min.js"></script>
+
+            <div class="countdownMark">
+                <script>
+                    
+                    const ano = <%=year%>
+                    const mes = <%=month%>
+                    const dia = <%=day%>
+
+
+                    // default example
+                    simplyCountdown('.countdownMark', {
+                        year: ano,
+                        month: mes,
+                        day: dia
+                    });
+
+
+                </script>
+            </div>
+        </body>
+    </head>
+</html>
