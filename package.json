@@ -10,9 +10,11 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
+    "less": "^3.12.2",
     "moment": "^2.27.0",
     "moment-countdown": "^0.0.3",
     "path": "^0.12.7",
+    "sass": "^1.26.10",
     "simplycountdown.js": "^1.5.0"
   }
 }

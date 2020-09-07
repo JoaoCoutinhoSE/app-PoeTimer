@@ -1,7 +1,66 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+        <style>
+            body {
+                background-color: #f2f1ed;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                overflow-x: hidden;
+            }
+
+            h1 {
+                font-weight: normal;
+            }
+
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+
+            .title {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .countdownMark{
+                margin: 0 auto;
+                width: 100vw;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .countdownMark > .simply-section {
+                display: inline-block;
+                font-size: 1.5em;
+                list-style-type: none;
+                padding: 1em;
+                text-transform: uppercase;
+            }
+
+            .countdownMark > .simply-section div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .countdownMark > .simply-section div .simply-amount {
+                font-size: 4.5rem;
+            }
+
+            .countdownMark > .simply-section div .simply-word {
+                font-size: 1em;
+                text-align: center;
+                margin-top: 0.5em;
+            }
+
+            .icon {
+                background-image: url('github.png');
+            }
+        </style>
+    </head> 
         <header>
-            <title>When does the league end ?</title>
+            <title>PoeCountdown</title>
         </header>
         <body>
             
@@ -9,6 +68,10 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
             <script src="http://vincentloy.github.io/simplyCountdown.js/dist/simplyCountdown.min.js"></script>
 
+            <img src="http://web.poecdn.com/image/logo/render_full.png" alt="poelogo">
+            <div class="title">
+                <h1>Countdown to the end of the league:</h1>
+            </div>
             <div class="countdownMark">
                 <script>
                     
@@ -21,12 +84,21 @@
                     simplyCountdown('.countdownMark', {
                         year: ano,
                         month: mes,
-                        day: dia
+                        day: dia,
+
+                        enableUtc: true,
+                        sectionClass: 'simply-section'
                     });
 
 
                 </script>
             </div>
+            <div class="links">
+                <span>Made by: <a href="https://twitter.com/PandaZIM" target="_blank">PandaZIM</a></span>
+                <a href="https://github.com/pandazim">
+                    <span class="icon"></span>
+                </a>
+            </div>
         </body>
-    </head>
+    
 </html>
