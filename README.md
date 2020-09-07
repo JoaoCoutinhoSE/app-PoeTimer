@@ -6,6 +6,8 @@ I have used Web scraping method to take the first element of the Leagues table f
 
 # Technologies 
 * NodeJs
+* Axios
+* Cheerio
 * MomentJs
 * ejs
 

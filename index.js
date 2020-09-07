@@ -49,7 +49,8 @@ app.set('view engine', 'ejs')
 app.use('/', router)
 app.use(expressLayouts)
 
-app.listen(3333)
+let porta = process.env.PORT || 3333
+app.listen(porta)
 
 
 
