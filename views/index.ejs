@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             body {
                 background-color: #f2f1ed;
@@ -54,9 +54,39 @@
                 margin-top: 0.5em;
             }
 
-            .icon {
-                background-image: url('github.png');
+            .links {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-top: 280px
             }
+
+            .links span {
+                font-size: 1em;
+                padding: 5px
+            }
+
+            .links span a {
+                text-decoration: none;
+                
+            }
+
+            .more-links a {
+                transition: all .2s ease-in-out;
+            }
+
+            .more-links img {
+                padding: 5px;
+            }
+
+            .more-links img:hover {
+                transform: scale(1.1);
+            }
+
+            .more-links img {
+                width: 30px;
+            }
+            
         </style>
     </head> 
         <header>
@@ -95,10 +125,13 @@
             </div>
             <div class="links">
                 <span>Made by: <a href="https://twitter.com/PandaZIM" target="_blank">PandaZIM</a></span>
-                <a href="https://github.com/pandazim">
-                    <span class="icon"></span>
-                </a>
+                <div class="more-links">
+                    <a href="https://github.com/pandazim" target="_blank">
+                        <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="GitHub">
+                    </a>
+                </div>
             </div>
+            
         </body>
     
 </html>
