@@ -10,7 +10,7 @@ let finalDate;
 axios.get('https://pathofexile.gamepedia.com/League')
     .then((response) => {
         
-        console.log(response)
+        
 
         const html = response.data;
         
