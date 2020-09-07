@@ -10,6 +10,7 @@ let finalDate;
 axios.get('https://pathofexile.gamepedia.com/League')
     .then((response) => {
         
+        console.log(response)
 
         const html = response.data;
         
@@ -26,7 +27,9 @@ axios.get('https://pathofexile.gamepedia.com/League')
         const year = finalDate.format('YYYY');
 
         
-    })
+    }).catch((err) => {
+        console.log(err)
+    })  
 
 const app = express()
 const router = express.Router()
