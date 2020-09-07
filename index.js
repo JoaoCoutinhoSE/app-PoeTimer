@@ -2,8 +2,6 @@ const axios = require('axios');
 const cheerio = require ('cheerio') 
 const moment = require('moment')
 const express = require('express')
-const path = require('path');
-const { json } = require('express');
 const expressLayouts = require('express-ejs-layouts')
 
 let dataText;
